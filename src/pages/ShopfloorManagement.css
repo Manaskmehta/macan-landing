@@ -1,0 +1,179 @@
+
+/* Shopfloor Management Page Layout */
+.shopfloor-page {
+    padding-top: 80px;
+    background-color: var(--bg-dark);
+    min-height: 100vh;
+    color: var(--text-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Effects - Using Violet/Indigo accents from root */
+.shopfloor-bg-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Hero Section */
+.shopfloor-hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 4rem 0;
+}
+
+.sf-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.sf-hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.sf-hero-text p {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    max-width: 550px;
+}
+
+/* Process Flow Section */
+.sf-process-section {
+    padding: 6rem 0;
+}
+
+.sf-process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.sf-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.sf-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    background: rgba(139, 92, 246, 0.05);
+}
+
+.sf-card-step {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 3rem;
+    font-weight: 800;
+    opacity: 0.05;
+    color: var(--text-primary);
+}
+
+.sf-icon {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.sf-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.sf-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Live Terminal / Monitoring Preview */
+.sf-monitoring {
+    padding: 6rem 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.monitor-frame {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.monitor-header {
+    background: #1a1a24;
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.monitor-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.monitor-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot-red { background: #ff5f57; }
+.dot-yellow { background: #febc2e; }
+.dot-green { background: #28c840; }
+
+.monitor-body {
+    background: #0f0f15;
+    padding: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal-line {
+    margin-bottom: 0.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.line-tag {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.line-content {
+    color: #a0a0a0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .sf-hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .sf-hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
