@@ -4,9 +4,22 @@
     padding-top: 80px;
     background-color: var(--bg-dark);
     min-height: 100vh;
+    min-height: 100dvh;
     color: var(--text-primary);
     position: relative;
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .devops-page {
+        padding-top: 68px;
+    }
+}
+
+@media (max-width: 480px) {
+    .devops-page {
+        padding-top: 64px;
+    }
 }
 
 .bg-glow-devops {
@@ -40,7 +53,7 @@
 }
 
 .devops-hero-text h1 {
-    font-size: 4.5rem;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
     line-height: 1.1;
     font-weight: 800;
     margin-bottom: 2rem;
@@ -87,7 +100,7 @@
 
 .devops-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
     padding: 4rem 0;
 }
@@ -212,7 +225,7 @@
 }
 
 .detail-content h3 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     margin-bottom: 2rem;
     background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.7) 100%);
     -webkit-background-clip: text;
@@ -270,5 +283,74 @@
     }
     .ai-feature-list li {
         justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .devops-hero {
+        min-height: auto;
+        padding: 3rem 0;
+    }
+
+    .devops-hero-text h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    .devops-hero-text p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .devops-card {
+        padding: 2rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    .devops-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .detail-visual {
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .info-section-devops {
+        padding: 4rem 0;
+    }
+
+    .detail-content p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .detail-content h3 {
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
+    }
+
+    .ai-feature-list li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .devops-grid {
+        padding: 2rem 0;
+        gap: 1.5rem;
+    }
+
+    .devops-card {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .devops-icon-wrapper {
+        width: 54px;
+        height: 54px;
+        font-size: 1.6rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .detail-visual {
+        height: 240px;
     }
 }

@@ -12,7 +12,7 @@ import './AboutUs.css';
 const stats = [
   { value: '10+', label: 'Clients Worldwide', icon: <FiGlobe /> },
   { value: '99.9%', label: 'Uptime Guarantee', icon: <FiShield /> },
-  { value: '5+', label: 'Years of Innovation', icon: <FiAward /> },
+  { value: 'Nov 2025', label: 'Founded & Growing', icon: <FiAward /> },
   { value: '24/7', label: 'Expert Support', icon: <FiUsers /> },
 ];
 
@@ -57,42 +57,19 @@ const values = [
 
 const team = [
   {
-    name: 'Founder & CEO',
-    role: 'Visionary & Strategy',
+    name: 'Manas Mehta',
+    role: 'Founder & CEO',
     bio: "Driving MacanX's mission to democratize enterprise-grade software for businesses of all sizes.",
-    initials: 'CE',
+    initials: 'MM',
     color: '#8b5cf6',
-  },
-  {
-    name: 'Head of Engineering',
-    role: 'Architecture & Scale',
-    bio: 'Building the technical backbone that powers our ERP, AI, and DevOps platforms with reliability.',
-    initials: 'HE',
-    color: '#6366f1',
-  },
-  {
-    name: 'Head of AI & Research',
-    role: 'Intelligence & Innovation',
-    bio: 'Leading our AI initiatives — from LLM pipelines to computer vision solutions for real-world business problems.',
-    initials: 'AI',
-    color: '#a855f7',
-  },
-  {
-    name: 'Head of Client Success',
-    role: 'Delivery & Relations',
-    bio: 'Ensuring every client achieves their goals through hands-on implementation support and long-term partnership.',
-    initials: 'CS',
-    color: '#ec4899',
   },
 ];
 
 const timeline = [
-  { year: '2020', event: 'MacanX Founded', detail: 'Started with a vision to build modern, intelligent ERP solutions for the jewellery industry.' },
-  { year: '2021', event: 'First Enterprise Client', detail: 'Onboarded our first large-scale client and delivered a fully custom Jewellery ERP in record time.' },
-  { year: '2022', event: 'AI Division Launched', detail: 'Expanded into Artificial Intelligence services — NLP, computer vision, and business automation.' },
-  { year: '2023', event: 'Global Expansion', detail: 'Began serving clients across multiple continents, growing our team and product suite significantly.' },
-  { year: '2024', event: 'MacanX Platform v2', detail: 'Launched a unified platform covering ERP, AI, DevOps, and Web services under one roof.' },
-  { year: '2025', event: 'Scaling Worldwide', detail: '10+ clients served worldwide with a growing team of engineers, AI researchers and product builders.' },
+  { year: 'Nov 2025', event: 'MacanX Founded', detail: 'Manas Mehta founded MacanX with a vision to build modern, intelligent ERP and AI solutions for businesses of all sizes.' },
+  { year: 'Dec 2025', event: 'Product Suite Takes Shape', detail: 'Rapid development of core products — Jewellery ERP, Corporate ERP, and AI consulting services.' },
+  { year: 'Early 2026', event: 'First Clients Onboarded', detail: 'Onboarded our first clients and delivered fully custom ERP and AI-powered solutions.' },
+  { year: '2026', event: 'Full Platform Launch', detail: 'Launched the unified MacanX platform covering ERP, AI, DevOps, and Web services under one roof — and scaling fast.' },
 ];
 
 /* ─── Animations ────────────────────────────────────── */
@@ -124,10 +101,10 @@ const AboutUs = () => {
               <span className="gradient-text">Actually Works</span>
             </h1>
             <p className="about-hero-sub">
-              MacanX is a global software company specialising in enterprise ERP, Artificial
-              Intelligence, DevOps infrastructure, and custom software development. We've helped
-              businesses across industries digitise, automate, and scale — one intelligent solution
-              at a time.
+              MacanX is a software company specialising in enterprise ERP, Artificial Intelligence,
+              DevOps infrastructure, and custom software development. Founded in November 2025 by
+              Manas Mehta, we're on a mission to help businesses of all sizes digitise, automate,
+              and scale — one intelligent solution at a time.
             </p>
             <div className="about-hero-cta">
               <Link to="/contact" className="cta-primary about-cta-btn">

@@ -4,9 +4,22 @@
     padding-top: 80px;
     background-color: var(--bg-dark);
     min-height: 100vh;
+    min-height: 100dvh;
     color: var(--text-primary);
     position: relative;
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .shopfloor-page {
+        padding-top: 68px;
+    }
+}
+
+@media (max-width: 480px) {
+    .shopfloor-page {
+        padding-top: 64px;
+    }
 }
 
 /* Background Effects - Using Violet/Indigo accents from root */
@@ -39,7 +52,7 @@
 }
 
 .sf-hero-text h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
     line-height: 1.2;
     margin-bottom: 1.5rem;
 }
@@ -175,5 +188,54 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .shopfloor-hero {
+        min-height: auto;
+        padding: 3rem 0;
+    }
+
+    .sf-hero-text p {
+        font-size: 1rem;
+    }
+
+    .sf-process-section,
+    .sf-monitoring {
+        padding: 4rem 0;
+    }
+
+    .sf-card {
+        padding: 1.5rem;
+    }
+
+    .sf-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .monitor-body {
+        padding: 1.25rem;
+        font-size: 0.85rem;
+        overflow-x: auto;
+    }
+
+    .terminal-line {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sf-hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .sf-card-step {
+        font-size: 2rem;
+    }
+
+    .monitor-body {
+        padding: 1rem;
+        font-size: 0.78rem;
     }
 }

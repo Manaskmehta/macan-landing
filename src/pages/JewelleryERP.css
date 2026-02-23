@@ -5,9 +5,22 @@
     padding-top: 80px;
     background-color: var(--bg-dark);
     min-height: 100vh;
+    min-height: 100dvh;
     color: var(--text-primary);
     position: relative;
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .jewellery-page {
+        padding-top: 68px;
+    }
+}
+
+@media (max-width: 480px) {
+    .jewellery-page {
+        padding-top: 64px;
+    }
 }
 
 /* Background Effects */
@@ -39,7 +52,7 @@
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
     line-height: 1.2;
     margin-bottom: 1.5rem;
 }
@@ -278,7 +291,7 @@
 
 .modules-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
 }
 
@@ -344,4 +357,111 @@
     .tab-pane { grid-template-columns: 1fr; }
     .deploy-banner { flex-direction: column; gap: 2rem; text-align: center; padding: 2rem; }
     .benefits-list { justify-content: center; flex-wrap: wrap; }
+}
+
+@media (max-width: 768px) {
+    .modern-hero {
+        height: auto;
+        min-height: 80vh;
+        padding: 3rem 0;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .cta-row {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .cta-primary.big {
+        width: 100%;
+        justify-content: center;
+        font-size: 1rem;
+        padding: 0.9rem 1.5rem;
+    }
+
+    /* Tabs Nav - scrollable on mobile */
+    .tabs-nav {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        border-radius: 12px;
+        padding: 0.4rem;
+        scrollbar-width: none;
+        width: 100%;
+    }
+    .tabs-nav::-webkit-scrollbar { display: none; }
+
+    .tab-btn {
+        flex-shrink: 0;
+        padding: 0.65rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .tab-content-area {
+        padding: 1.5rem;
+        min-height: auto;
+    }
+
+    .pane-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .pane-stats {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .tabs-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .modules-grid-section,
+    .interactive-features,
+    .deployment-section {
+        padding: 3rem 0;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .deploy-banner {
+        padding: 1.5rem;
+    }
+
+    .banner-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .benefits-list {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tabs-nav {
+        gap: 0.4rem;
+    }
+
+    .tab-content-area {
+        padding: 1rem;
+    }
+
+    .pane-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .pane-desc {
+        font-size: 0.95rem;
+    }
+
+    .app-mockup {
+        aspect-ratio: auto;
+        min-height: 200px;
+    }
 }

@@ -116,6 +116,12 @@
     gap: 10px;
 }
 
+@media (max-width: 480px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .mini-card {
     aspect-ratio: 1;
     background: #1c1c24;
@@ -290,6 +296,13 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
     padding: 1.5rem;
+}
+
+@media (max-width: 480px) {
+    .software-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 }
 
 .stat-card {

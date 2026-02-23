@@ -108,13 +108,13 @@ const ContactUs = () => {
     {
       icon: <FiMail />,
       title: 'Email Us',
-      lines: ['hello@macanx.com', 'support@macanx.com'],
+      lines: ['admin@macanx.in'],
       color: '#8b5cf6',
     },
     {
       icon: <FiPhone />,
       title: 'Call Us',
-      lines: ['+91 98765 43210', 'Mon–Fri, 9 AM – 7 PM IST'],
+      lines: ['+91 76000 67060', 'Mon–Fri, 9 AM – 7 PM IST'],
       color: '#6366f1',
     },
     {
@@ -194,7 +194,7 @@ const ContactUs = () => {
               <p>Fill in the form and our team will get back to you within 24 hours.</p>
 
               <div className="trust-points">
-                {['No spam, ever', 'Response within 24 hours', 'Talk directly to our team', '10+ global clients served'].map((pt, i) => (
+                {[ 'Response within 24 hours', 'Talk directly to our team', '10+ global clients served'].map((pt, i) => (
                   <div key={i} className="trust-point">
                     <FiCheckCircle className="trust-icon" />
                     <span>{pt}</span>
@@ -312,7 +312,7 @@ const ContactUs = () => {
                           id="phone"
                           name="phone"
                           type="tel"
-                          placeholder="+91 98765 43210"
+                          placeholder="+91 76000 67060"
                           value={form.phone}
                           onChange={handleChange}
                           onBlur={handleBlur}

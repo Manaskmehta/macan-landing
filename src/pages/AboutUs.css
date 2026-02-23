@@ -6,9 +6,22 @@
   padding-top: 80px;
   background-color: var(--bg-dark);
   min-height: 100vh;
+  min-height: 100dvh;
   color: var(--text-primary);
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding-top: 68px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding-top: 64px;
+  }
 }
 
 /* ─── Background Glows ─── */
@@ -541,10 +554,10 @@
   .timeline-item.left,
   .timeline-item.right {
     flex-direction: row;
-    padding: 1.2rem 0 1.2rem 3.2rem;
+    padding: 1.2rem 0 1.2rem 3.5rem; /* Increased padding */
   }
   .timeline-dot {
-    left: 10px;
+    left: 9px; /* Adjusted to center on line */
     transform: none;
   }
 }
