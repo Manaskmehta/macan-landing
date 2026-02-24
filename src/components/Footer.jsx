@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiTwitter, FiLinkedin, FiGithub } from 'react-icons/fi';
+import { FiLinkedin, FiInstagram } from 'react-icons/fi';
 import './Footer.css';
 
 const Footer = () => {
@@ -19,9 +19,40 @@ const Footer = () => {
             Revolutionizing enterprise operations with intelligent, scalable software solutions. Build your future today.
           </p>
           <div className="social-links">
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter"><FiTwitter /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FiLinkedin /></a>
-            <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><FiGithub /></a>
+            {/* MacanX */}
+            <a
+              href="https://www.linkedin.com/company/macanx/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="MacanX LinkedIn"
+            >
+              <FiLinkedin />
+            </a>
+            <a
+              href="https://www.instagram.com/_macanx_/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="MacanX Instagram"
+            >
+              <FiInstagram />
+            </a>
+            {/* Manas */}
+            {/* <a
+              href="https://www.linkedin.com/in/manasmehta1504/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Manas Mehta LinkedIn"
+            >
+              <FiLinkedin />
+            </a>
+            <a
+              href="https://www.instagram.com/ig_manasmehta/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Manas Mehta Instagram"
+            >
+              <FiInstagram />
+            </a> */}
           </div>
         </div>
 

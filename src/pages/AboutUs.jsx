@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import {
   FiArrowRight, FiTarget, FiZap, FiShield, FiHeart,
   FiUsers, FiGlobe, FiAward, FiCode, FiTrendingUp,
-  FiLinkedin, FiTwitter, FiGithub
+  FiLinkedin, FiInstagram
 } from 'react-icons/fi';
 import './AboutUs.css';
 
@@ -233,9 +233,23 @@ const AboutUs = () => {
                   <p>{member.bio}</p>
                 </div>
                 <div className="team-social">
-                  <a href="#" aria-label="LinkedIn"><FiLinkedin /></a>
-                  <a href="#" aria-label="Twitter"><FiTwitter /></a>
-                  <a href="#" aria-label="GitHub"><FiGithub /></a>
+                  {/* Manas – Social links */}
+                  <a
+                    href="https://www.linkedin.com/in/manasmehta1504/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Manas Mehta LinkedIn"
+                  >
+                    <FiLinkedin />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/ig_manasmehta/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Manas Mehta Instagram"
+                  >
+                    <FiInstagram />
+                  </a>
                 </div>
               </motion.div>
             ))}
